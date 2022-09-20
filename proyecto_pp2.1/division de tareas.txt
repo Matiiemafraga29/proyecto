@@ -1,7 +1,11 @@
-Base de Datos---> los hermanos diaz
-
-front y back produccion ---> Marcelo
-
-Opcion RECETAS front y back, diseño  ---> Angel y Matias
-
-
+-Configurar login de acceso
+		-administrador		
+		-usuario
+-incluir barra de navegacion a todas las paginas
+-traer informacion al escanear codigo en pagina produ.php
+-achicar logo
+-migrar todas las paginas a .php
+-en ABM stock programar:
+		-que no lea el valor cero
+		-mensaje de cargar exitosa
+		-modificar estilod e titulo	

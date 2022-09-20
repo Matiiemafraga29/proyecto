@@ -26,8 +26,6 @@ class conexion{
         return $sentencia->fetchAll();
     }
 
-
-
 }
 
 
