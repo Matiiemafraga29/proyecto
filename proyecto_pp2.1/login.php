@@ -11,15 +11,27 @@
 <link rel="stylesheet"  href="css/style.css"/>
 </head>
 
-<body class="m=0 row justify-content-center text-center">      
+<body class="row justify-content-center text-center">      
                 <!--Formulario login-->
                 
             <div class="container " >
             <div class="centrado">  
                             <h1>Ingreso a Speed data System</h1>       
                     <div class="row">
-                                 
-     <form > 
+                    
+                    <form method="post" action="" name="signin-form">
+                        <div class="form-element">
+                            <label>Username</label>
+                            <input type="text" name="username" pattern="[a-zA-Z0-9]+" required />
+                        </div>
+                        <div class="form-element">
+                            <label>Password</label>
+                            <input type="password" name="password" required />
+                        </div>
+                        <button type="submit" name="login" value="login">Log In</button>
+                    </form>
+
+     <!-- <form > 
      
             <div class="form-floating mb-3">
                 
@@ -33,11 +45,11 @@
                 <div class="invalid-feedback" data-sb-feedback="password:required">Password is required.</div>
             </div>
             
-            <div class="btn-group-vertical">                                  <!-- Color borde|tipo de boton| --> 
-        <a href="index.php " button type="button"  class=" btn btn-secondary border-dark btn-lg">Ingresar</a>
+            <div class="btn-group-vertical">                                  <! Color borde|tipo de boton| --> 
+        <!-- <a href="index.php " button type="button"  class=" btn btn-secondary border-dark btn-lg">Ingresar</a>
           </div> 
      
-     </form>
+     </form> -->
             </div>
                 </div>
                     </div>
