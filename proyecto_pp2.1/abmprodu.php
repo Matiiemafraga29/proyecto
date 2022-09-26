@@ -1,5 +1,26 @@
-    <?php include("header.php");?>
+   
     <?php include("conexion.php") ?>
+    <!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel ="stylesheet" href="css/bootstrap.min.css"/>
+  <!-- Bootstrap -->
+
+
+  </head>
+
+
+
+
+
+  
+
+   
+   <?php include ("header.php") ?>
+
+</nav>
+
     <?php 
     if($_POST){
         if(ctype_digit($_POST['cantidad']) && ctype_digit($_POST['peso'])){
@@ -27,7 +48,7 @@
 
 <!-- Formulario de ejemplo-->
 
-		<h1>INGRESOD DE MATERIA PRIMA</h1>
+		<h1>INGRESO DE MATERIA PRIMA</h1>
 
         <div class="container px-5 my-5">
     <form id="contactForm" data-sb-form-api-token="API_TOKEN" action="abmprodu.php" method="post">
@@ -81,11 +102,6 @@
 
 
 <!-- Footer acomodor logo falta -->
-<footer>
-     &copy; 2022
-     <img src="img/logo.png" width="100"
-       height="60">
 
- </footer>
   </body>
 </html>

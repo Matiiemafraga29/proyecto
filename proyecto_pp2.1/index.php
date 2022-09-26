@@ -36,13 +36,13 @@
             <a href="produ.php" class="nav-menu-link nav-link ">produccion</a>
         </li>
     <li class="nav-menu-item">
-            <a href="stock.html" class="nav-menu-link nav-link ">Stock</a>
+            <a href="stock.php" class="nav-menu-link nav-link ">Stock</a>
         </li>
     <li class="nav-menu-item">
-            <a href="imp_etiq.html" class="nav-menu-link nav-link ">Imp. de etiquetas</a>
+            <a href="imp_etiq.php" class="nav-menu-link nav-link ">Imp. de etiquetas</a>
         </li>
     <li class="nav-menu-item">
-            <a href="recetas.html" class="nav-menu-link nav-link ">Recetas</a>
+            <a href="recetas.php" class="nav-menu-link nav-link ">Recetas</a>
         </li>
         <li class="nav-menu-item">
             <a href="login.php" class="nav-menu-link nav-link ">Cerrar sesion</a>
@@ -69,16 +69,6 @@
 
 
 
-<!-- MENU -->
+<!-- footer -->
 
-  
-    
-<!-- Footer acomodor logo falta -->
-<footer>
-
-     &copy; 2022 
-     <img src="img/logo.png" width="100" height="60">
-
- </footer>
-</body>
-</html>
+  <?php include ("footer.php") ?>

@@ -110,7 +110,7 @@ footer{
     width: 100%;
 }
 
-@media(max-width: 768px) {
+@media(max-width: 625px) {
 
     body{
 padding-top: 70px;
