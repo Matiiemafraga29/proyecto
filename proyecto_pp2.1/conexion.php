@@ -10,7 +10,7 @@ class conexion{
         try{
             $this->conexion= new PDO("mysql:host=$this->servidor;dbname=proyecto;",$this->usuario,$this->contrasenia);
             $this->conexion->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
-        }catch (PDOException $error){
+        }catch (PDOExeption $error){
             return "falla de conexión".$error;
         }
     }

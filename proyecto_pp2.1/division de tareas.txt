@@ -1,11 +1,16 @@
--Configurar login de acceso
-		-administrador		
-		-usuario
+
+
+
 -incluir barra de navegacion a todas las paginas
--traer informacion al escanear codigo en pagina produ.php
+
+-traer informacion al escanear codigo o ingresarlo manualmente en pagina produ.php
+
 -achicar logo
--migrar todas las paginas a .php
+
 -en ABM stock programar:
-		-que no lea el valor cero
-		-mensaje de cargar exitosa
-		-modificar estilod e titulo	
+		-que no lea el valor cero (listo)
+		-mensaje de carga de bolson correcta (listo)
+		-modificar estilo de titulo
+
+
+-descripcion o bienvenido en index o imagen que se desvanesca algo no tan llamativo pero ataractivo (sugerencia de toledo)

@@ -2,9 +2,11 @@
 <html>
   <head>
     <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width">
    
     <!-- Bootstrap -->
-
+    <link rel ="stylesheet" href="css/bootstrap.min.css"/>
 <!-- Estilos en css -->
 <link rel="stylesheet"  href="css/style.css"/>
 <!-- Js Hambur -->
@@ -17,27 +19,27 @@
 
   </head>
   <header class="header">  
-    <nav class="nav"> 
-        <a href="index.php" class="logo nav-link ">Speed Data</a>
+    <nav class="navbar navbar-expand-lg">
+        <a href="indexviejo.php" class="logo nav-link ">Speed Data</a>
     <button class="nav-toggle">
         <i class="fa-solid fa-bars"></i>
     </button>
         <ul class="nav-menu ">
     
-        <li class="nav-menu-item">
-                <a href="produ.php" class="nav-menu-link nav-link ">produccion</a>
+        <li class="nav-item">
+                <a href="produ.php" class="nav-menu-link nav-link ">Produccion</a>
             </li>
-        <li class="nav-menu-item">
+        <li class="nav-item">
                 <a href="stock.php" class="nav-menu-link nav-link ">Stock</a>
             </li>
-        <li class="nav-menu-item">
-                <a href="imp_etiq.php" class="nav-menu-link nav-link ">Imp. de etiquetas</a>
+        <li class="nav-item">
+                <a href="imp_etiq.php" class="nav-menu-link nav-link ">Imp. de Etiquetas</a>
             </li>
-        <li class="nav-menu-item">
+        <li class="nav-item">
                 <a href="recetas.php" class="nav-menu-link nav-link ">Recetas</a>
             </li>
-            <li class="nav-menu-item">
-                <a href="login.php" class="nav-menu-link nav-link ">Cerrar sesion</a>
+            <li class="nav-item">
+                <a href="index.html" class="nav-menu-link nav-link ">Cerrar Sesion</a>
             </li>
             </li>
     </ul>

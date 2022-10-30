@@ -58,13 +58,6 @@ CREATE TABLE `materiales` (
   `nombre` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
--- --------------------------------------------------------
-
---
--- Estructura de tabla para la tabla `users`
---
-
-
 --
 -- Volcado de datos para la tabla `materiales`
 --
