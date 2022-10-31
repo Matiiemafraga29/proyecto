@@ -24,9 +24,9 @@
     <button class="nav-toggle">
         <i class="fa-solid fa-bars"></i>
     </button>
-        <ul class="nav-menu ">
     
-        <li class="nav-item">
+        <ul>
+        <li class="nav-menu nav-item ms-auto">
                 <a href="produ.php" class="nav-menu-link nav-link ">Produccion</a>
             </li>
         <li class="nav-item">
