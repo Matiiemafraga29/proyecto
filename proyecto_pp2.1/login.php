@@ -8,7 +8,7 @@
 <!-- Bootstrap -->
 <link rel ="stylesheet" href="css/bootstrap.min.css"/>
 <!-- Estilos en css -->
-<link rel="stylesheet"  href="css/style.css"/>
+
 </head>
 
 <body class="m=0 row justify-content-center text-center">      

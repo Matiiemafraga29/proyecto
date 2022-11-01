@@ -1,10 +1,10 @@
 <?php include ("header.php") ?>
 <meta name="viewport" content="width=device-width">
     
-    <link href="css/style.css" rel="stylesheet" type="text/css" />
 
-<class class="titulo">
-  MODIFICACION Y CONSULTA DE STOCK
+
+<class class="titulo"><h2>
+  MODIFICACION Y CONSULTA DE STOCK</h2>
 </class>
 
 

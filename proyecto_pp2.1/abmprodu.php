@@ -24,7 +24,7 @@
             $mensaje="<div class='alert alert-success d-flex align-items-center' role='alert'>
             <svg class='bi flex-shrink-0 me-2' width='24' height='24' role='img' aria-label='Success':><use xlink:href=#check-circle-fill'/></svg>
             <div>
-              Envio Exitoso.
+              Envio Exitoso.<a href='etiqueta.php?lote_id=$ultimoLote' target='_blank'>Imprimir etiquetas</a>
             </div>
           </div>";
             }
@@ -42,51 +42,50 @@
 
 <!-- Formulario-->
 
-		<h1>INGRESO DE MATERIA PRIMA</h1>
+	<h2>INGRESO DE MATERIA PRIMA</h2>
 
-        <div class="container px-5 my-5">
-    <form id="contactForm" data-sb-form-api-token="API_TOKEN" action="abmprodu.php" method="post">
-        
-        <div class="form-floating mb-3">
-            <input class="form-control" id="cantidad" type="number" placeholder="Cantidad" data-sb-validations="required" name="cantidad"/>
-            <label for="cantidad">Cantidad de bolsas</label>
-            <div class="invalid-feedback" data-sb-feedback="cantidad:required">Cantidad is required.</div>
-        </div>
-        <div class="form-floating mb-3">
-            <select class="form-select" id="material" aria-label="Material" name="material">
-                
-                <?php
-                $objconexion = new conexion();
-                $resultado=$objconexion->consultar("SELECT * FROM `materiales`");
-                foreach($resultado as $mate){
-                    ?> <option value="<?php echo $mate['codigo_sap']?>"> 
-                    <?php echo $mate['codigo_sap']." - ".$mate['nombre'] ?></option><?php
-                }
-                ?>
-
-            </select>
-            <label for="material">Material</label>
-        </div>
-        <div class="form-floating mb-3">
-            <input class="form-control" id="peso" type="number" placeholder="Peso" data-sb-validations="required" name="peso"/>
-            <label for="peso">Peso /kg</label>
-            <div class="invalid-feedback" data-sb-feedback="peso:required">Peso is required.</div>
-        </div>
-        <div class="d-none" id="submitSuccessMessage">
-            <div class="text-center mb-3">
-                <div class="fw-bolder">Form submission successful!</div>
-                <p>To activate this form, sign up at</p>
-                <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
+    <div class="container px-5 my-5">
+        <form id="contactForm" data-sb-form-api-token="API_TOKEN" action="abmprodu.php" method="post">
+            <div class="form-floating mb-3">
+                <input class="form-control" id="cantidad" type="number" placeholder="Cantidad" data-sb-validations="required" name="cantidad"/>
+                <label for="cantidad">Cantidad de bolsas</label>
+                <div class="invalid-feedback" data-sb-feedback="cantidad:required">Cantidad is required.</div>
             </div>
-        </div>
-        <div class="d-none" id="">
-            <div class="text-center text-danger mb-3">Error sending message!</div>
-        </div>
-        <div class="d-grid">
-            <button class="btn btn-primary btn-lg" id="submit" type="submit" value="Submit" name="enviar">GUARDAR</button>
-        </div>
-    </form>
-</div>
+            <div class="form-floating mb-3">
+                <select class="form-select" id="material" aria-label="Material" name="material">
+                    
+                    <?php
+                    $objconexion = new conexion();
+                    $resultado=$objconexion->consultar("SELECT * FROM `materiales`");
+                    foreach($resultado as $mate){
+                        ?> <option value="<?php echo $mate['codigo_sap']?>"> 
+                        <?php echo $mate['codigo_sap']." - ".$mate['nombre'] ?></option><?php
+                    }
+                    ?>
+
+                </select>
+                <label for="material">Material</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input class="form-control" id="peso" type="number" placeholder="Peso" data-sb-validations="required" name="peso"/>
+                <label for="peso">Peso /kg</label>
+                <div class="invalid-feedback" data-sb-feedback="peso:required">Peso is required.</div>
+            </div>
+            <div class="d-none" id="submitSuccessMessage">
+                <div class="text-center mb-3">
+                    <div class="fw-bolder">Form submission successful!</div>
+                    <p>To activate this form, sign up at</p>
+                    <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
+                </div>
+            </div>
+            <div class="d-none" id="">
+                <div class="text-center text-danger mb-3">Error sending message!</div>
+            </div>
+            <div class="d-grid">
+                <button class="btn btn-primary btn-lg" id="submit" type="submit" value="Submit" name="enviar">GUARDAR</button>
+            </div>
+        </form>
+    </div>
 <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
 <?php   echo ($mensaje);
         $mensaje="";
@@ -95,4 +94,4 @@
 
   </body>
 
-  <?php include ("footer.php") ?>
+  

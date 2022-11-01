@@ -1,13 +1,11 @@
 <?php include ("header.php") ?>
 
-
-
-		<h1>MODIFICACION Y CONSULTA DE ETIQUETAS</h1>
+		<h2>CONSULTA DE ETIQUETAS</h2>
 
     <div>
-    <a class="btn btn-secondary" href="#" role="button">ABM DE ETIQUETAS NO ESTA HECHO</a>
-    
-
-    <a class="btn btn-secondary" href="#" role="button">LISTA DE ETIQUETAS NO ESTA HECHO</a>
-</div>
-        <?php include ("footer.php") ?>
+      <form action="etiqueta.php" method="get" target="_blank">
+        <input type="numeric" placeholder="ID de la bolsa a imprimir" name="bolsa_id">
+        <input type="submit" value="Iprimie" >
+      </form>
+    </div>
+  <?php include ("footer.php") ?>
