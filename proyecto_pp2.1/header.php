@@ -38,7 +38,7 @@
                     </li>
                 
                     <li class="nav-item">
-                        <a href="index.html" class="nav-menu-link nav-link ">Cerrar Sesion</a>
+                        <a href="index.php" class="nav-menu-link nav-link ">Cerrar Sesion</a>
                     </li>
                 </ul>
             </nav>

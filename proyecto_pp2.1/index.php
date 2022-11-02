@@ -1,74 +1,54 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta charset="utf-8">
-<title>Menu</title>
-   <!-- Bootstrap 
-<link rel ="stylesheet" href="css/bootstrap.min.css"/>-->
-<!-- Estilos en css -->
-<link rel="stylesheet"  href="css/style.css"/>
-</head>
-<!-- Js Hambur -->
-<script src="https://kit.fontawesome.com/9f74c55650.js" crossorigin="anonymous">
-
-</script>
-
-<script defer src="js/index.js"></script>
-
-
-<body class="row justify-content-center text-center">
-
-<!--<nav><h1>Proyecto PP2  | Speed Data</h1></nav>-->
-
-
-<!--Barra de navegacion hambur media queries -->
-
-<header class="header">  
-<nav class="nav"> 
-    <a href="index.php" class="logo nav-link ">Speed Data</a>
-<button class="nav-toggle">
-    <i class="fa-solid fa-bars"></i>
-</button>
-    <ul class="nav-menu ">
-
-    <li class="nav-menu-item">
-            <a href="produ.php" class="nav-menu-link nav-link ">produccion</a>
-        </li>
-    <li class="nav-menu-item">
-            <a href="stock.php" class="nav-menu-link nav-link ">Stock</a>
-        </li>
-    <li class="nav-menu-item">
-            <a href="imp_etiq.php" class="nav-menu-link nav-link ">Imp. de etiquetas</a>
-        </li>
-    <li class="nav-menu-item">
-            <a href="recetas.php" class="nav-menu-link nav-link ">Recetas</a>
-        </li>
-        <li class="nav-menu-item">
-            <a href="login.php" class="nav-menu-link nav-link ">Cerrar sesion</a>
-        </li>
-        </li>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
     
+<!-- Bootstrap -->
+<link rel ="stylesheet" href="css/bootstrap.min.css"/>
+<!-- Estilos en css -->
+<link rel="stylesheet"  href="css/modi.css"/>
+
+</head>
+<body class="m=0 row justify-content-center text-center">      
+    
+    <!--Formulario login-->
+    <div class="container " >
+        <div class="centrado">  
+            <h1>Ingreso a Speed data System</h1> 
+        </p>
+    </p>
+</p>
+</p>
+</p>
+</p>
+</p>
+      
+            <div class="row">
+                        
+                <form action="validar.php" method="post"> 
+                    
+                    <div class="form-floating mb-3">
+
+                        <div class="form-floating mb-3"> 
+                            <input type="text" class="form-control-lg" name="usuario" placeholder="Usuario" data-sb-validations="required"   autofocus>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="password" class="form-control-lg" name="contraseña" placeholder="Contraseña" data-sb-validations="required">
+                        </div>
+
+                        <input class="btn btn-success btn" type="submit" value="Ingresar">
+                    </div> 
+
+                </form>
+            </div>
+        </div>
+    </div>
 
 
 
+</body>
+</html>
 
-
-</ul>
-</nav>
-</header>  
-
-
-
-
-
-
-
-
-<!-- Barra de navegador boostrap -->
-
-
-
-<!-- footer -->
-
-  <?php include ("footer.php") ?>
+<?php include ("footer.php") ?>

@@ -46,13 +46,13 @@
 
     <div class="container px-5 my-5">
         <form id="contactForm" data-sb-form-api-token="API_TOKEN" action="abmprodu.php" method="post">
-            <div class="form-floating mb-3">
+            <div class=" form mb-3">
                 <input class="form-control" id="cantidad" type="number" placeholder="Cantidad" data-sb-validations="required" name="cantidad"/>
-                <label for="cantidad">Cantidad de bolsas</label>
+                <label id="label2" for="cantidad">Cantidad de bolsas</label>
                 <div class="invalid-feedback" data-sb-feedback="cantidad:required">Cantidad is required.</div>
             </div>
-            <div class="form-floating mb-3">
-                <select class="form-select" id="material" aria-label="Material" name="material">
+            <div class="form mb-3">
+                <select  class="form-select" id="material" aria-label="Material" name="material">
                     
                     <?php
                     $objconexion = new conexion();
@@ -64,11 +64,11 @@
                     ?>
 
                 </select>
-                <label for="material">Material</label>
+                <label id="label2" for="material">Material</label>
             </div>
-            <div class="form-floating mb-3">
+            <div class="form mb-3">
                 <input class="form-control" id="peso" type="number" placeholder="Peso" data-sb-validations="required" name="peso"/>
-                <label for="peso">Peso /kg</label>
+                <label id="label2" for="peso">Peso /kg</label>
                 <div class="invalid-feedback" data-sb-feedback="peso:required">Peso is required.</div>
             </div>
             <div class="d-none" id="submitSuccessMessage">

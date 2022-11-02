@@ -20,7 +20,7 @@
                 ?>
             </select>
             <label for="material">Material</label>
-            <input type="submit" name="enviar" value="Buscar">
+            <input class="btn btn-primary" type="submit" name="enviar" value="Buscar">
     </form>
 <div class="container " >
 <div class="row justify-content-md-center" >

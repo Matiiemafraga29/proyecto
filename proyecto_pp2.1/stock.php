@@ -9,10 +9,10 @@
 
 
 <div>
-    <a class="btn btn-secondary" href="abmprodu.php" role="button">ABM DE PRODUCTOS</a>
+    <a class="btn btn-primary " href="abmprodu.php" role="button">ABM DE PRODUCTOS</a>
     
 
-    <a class="btn btn-secondary" href="consultastock.php" role="button">CONSULTA DE STOCK</a>
+    <a class="btn btn-primary" href="consultastock.php" role="button">CONSULTA DE STOCK</a>
 </div>
 
 
