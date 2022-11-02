@@ -9,14 +9,14 @@
   </head>
 
   <form action="produ.php" method="get">
-  <div class="container " >
-       <div class="row justify-content-md-center" >
-              <div class="mb-3">
-                <label for="" class="form-label"><h2>CODIGO DE BOLSA</h2></label>
-                <input type="text" name="Codigo_scan" id="" class="form-control" placeholder="" aria-describedby="helpId">
-              </div>
-        </div>
-  </div>      
+    <div class="container " >
+        <div class="row justify-content-md-center" >
+                <div class="mb-3">
+                  <label for="" class="form-label"><h2>CODIGO DE BOLSA</h2></label>
+                  <input type="text" name="Codigo_scan" id="" class="form-control" placeholder="" aria-describedby="helpId">
+                </div>
+          </div>
+    </div>      
     <button type="submit" class="btn btn-primary" name="submit" value="submit">Enviar</button>
   </form>
 
@@ -34,30 +34,37 @@
         if(isset ($resultado[0]) && $resultado [0] [6] == 1 ){
           $bolsa=$resultado[0];
           echo "
-          <div class=container >
-          <div class=row justify-content-md-center>
-          <table class=table table-bordered border-dark>
-            <tr class=table-primary>
-              <td>ID de bolsa</td><td class=table-secondary>$bolsa[0]</td>
-            </tr>
-            <tr class=table-primary>
-              <td>ID de lote</td><td class=table-secondary>$bolsa[2]</td>
-            </tr>
-            <tr class=table-primary>
-              <td>Material</td><td class=table-secondary>$bolsa[3] - $bolsa[4]</td>
-            </tr>
-            <tr class=table-primary>
-              <td>Peso</td><td class=table-secondary>$bolsa[1]</td>
-            </tr>
-            <tr class=table-primary>
-              <td>Estatus</td><td class=table-secondary>$bolsa[5]</td>
-            </tr>
-          </table>
-          </div>
+          <div class='container' >
+            <div class='row justify-content-md-center'>
+              <table class='table table-bordered border-dark'>
+                <tr class=table-primary>
+                  <td>ID de bolsa</td><td class=table-secondary>$bolsa[0]</td>
+                </tr>
+                <tr class='table-primary'>
+                  <td>ID de lote</td><td class=table-secondary>$bolsa[2]</td>
+                </tr>
+                <tr class='table-primary'>
+                  <td>Material</td><td class=table-secondary>$bolsa[3] - $bolsa[4]</td>
+                </tr>
+                <tr class='table-primary'>
+                  <td>Peso</td><td class=table-secondary>$bolsa[1]</td>
+                </tr>
+                <tr class='table-primary'>
+                  <td>Estatus</td><td class=table-secondary>$bolsa[5]</td>
+                </tr>
+              </table>
+            </div>
           </div>
           <form action='produ.php?Codigo_scan=$bolsa[0]&submit=submit' method='post'>
-            <input type='number' name='cantidad' id=''>
-            <input type='submit' name='Editar' value='Editar'>
+            <div class='container'>
+              <div class='row justify-content-md-center' >
+                <div class='mb-3'>
+                  <label for='' class='form-label'>PESO USADO</label>
+                  <input type='number' name='cantidad' id='' class='form-control' placeholder='' aria-describedby='helpId'>
+                </div>
+              </div>
+            </div>
+            <input type='submit' class='btn btn-primary' name='Editar' value='Editar'>
           </form>";
           if(isset($_POST['Editar'])){
             if($_POST['cantidad']>0){
@@ -120,6 +127,4 @@
 
     ?>
 
-
-
-  
+<?php include ("footer.php") ?>
